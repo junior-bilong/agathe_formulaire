@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agathe Sarah</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div>
+                <!--- this is for the logo you can place an image here --->
+                <a href="index.html">Agathe Sarah</a>
+            </div>
+            <nav>
+                <!--- navigation bar is starting here --->
+                <ul id="items-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><button class="login-btn" onclick="document.getElementById('login-form').style.display ='block'" style = "width : auto;">Login</button></li>
+                </ul>
+            </nav>
+            <!--- navigation bar is finished lets run and see --->
+        </div>
+        <div class="login-page" id="login-form">
+            <!-- creating the form box -->
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" onclick="login()" class="toggle-btn">Login</button>
+                    <button type="button" onclick="register()" class="toggle-btn">Register</button>
+                </div>
+
+                <!-- creating the login form -->
+                <form id="login" class="input-group-login">
+                    <input type="text" class="input-field" placeholder="Email Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="checkbox"> <span> Remembr Password </span>
+                    <button type="submit" class="submit-btn">Log in</button>
+                </form>
+
+                <!-- creating the registration form -->
+                <form id="register" class="input-group-register">
+                    <input type="text" class="input-field" placeholder="First Name" required>
+                    <input type="text" class="input-field" placeholder="Last Name" required>
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="password" class="input-field" placeholder="Confirm Password" required>
+                    <input type="checkbox" class="checkbox"><span>I agree to the term and conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
